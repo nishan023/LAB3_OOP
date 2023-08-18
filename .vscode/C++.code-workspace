@@ -1,0 +1,11 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "terminal.integrated.shellIntegration.enabled": false,
+        "code-runner.runInTerminal": true
+    }
+}
