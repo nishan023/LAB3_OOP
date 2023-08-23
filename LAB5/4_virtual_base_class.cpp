@@ -1,19 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class A
 {
-    protected:
+protected:
     int adata;
-
 };
-class B : virtual public A {};
-class C: virtual public A{};
-class D : public B ,public C
+class B : virtual public A
 {
-    public:
+};
+class C : virtual public A
+{
+};
+class D : public B, public C
+{
+public:
     D(int a)
     {
-        adata=a;
+        adata = a;
     }
     int getdata()
     {
@@ -23,6 +26,6 @@ class D : public B ,public C
 int main()
 {
     D d(6);
-    cout<<d.getdata();
+    cout << d.getdata();
     return 0;
 }

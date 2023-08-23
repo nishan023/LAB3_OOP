@@ -1,26 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 class Base
 {
-    public:
+public:
     virtual void print()
-        {
-            cout<<"Base class"<<endl;
-
-        }
+    {
+        cout << "Base class" << endl;
+    }
 };
-class Derived :public Base
+class Derived : public Base
 {
-    public:
+public:
     void print()
     {
-        cout<<"Derived class"<<endl;
+        cout << "Derived class" << endl;
     }
 };
 int main()
 {
     Derived d1;
-    Base *b1=&d1;
+    Base *b1 = &d1;
     b1->print();
     return 0;
 }

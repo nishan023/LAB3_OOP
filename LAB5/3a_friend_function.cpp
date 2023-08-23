@@ -1,7 +1,7 @@
 
 //*A friend function is a function that is declared in the class definition
- //*but is not a member of the class. This means that the function can access
- //* the private members of the class, even though it is not a member of the class.
+//*but is not a member of the class. This means that the function can access
+//* the private members of the class, even though it is not a member of the class.
 #include <iostream>
 using namespace std;
 class sample
