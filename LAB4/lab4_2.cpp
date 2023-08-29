@@ -1,77 +1,60 @@
 #include <iostream>
 using namespace std;
-
 class Fruit
 {
-protected:
-    int fruits;
 
 public:
-    Fruit(int count = 0)
+    static int sum;
+    int calculate(int n1)
     {
-        fruits = count;
+        sum+= n1;
+        return sum;
     }
-    void add_fruit(int count)
+    void display_fruits()
     {
-        fruits += count;
-    }
-    int get_fruit_count()
-    {
-        return fruits;
+        cout<<"The total number of fruits in basket: "<<sum<<endl;
     }
 };
-
-class Apples : public Fruit
+int Fruit::sum=0;
+class Apples 
 {
-private:
-    int apples;
-
 public:
-    Apples(int count = 0) : Fruit(count)
+    int num;
+    Apples()
     {
-        apples = count;
+        cout << "Enter the number of Apples: ";
+        cin >> num;
     }
-    void add_apples(int count)
+    Fruit f;
+    void display()
     {
-        apples += count;
-        add_fruit(count);
-    }
-    int get_apple_count()
-    {
-        return apples;
+        cout<<"Number of Apples: "<<num<<endl;
+    f.calculate(num);
     }
 };
-
-class Mangoes : public Fruit
+class Mangoes 
 {
-private:
-    int mangoes;
-
 public:
-    Mangoes(int count = 0) : Fruit(count)
+    int num;
+    Mangoes()
     {
-        mangoes = count;
+        cout << "Enter the number of Mangoes: ";
+        cin >> num;
     }
-    void add_mangoes(int count)
+    Fruit f;
+    void display()
     {
-        mangoes += count;
-        add_fruit(count);
-    }
-    int get_mango_count()
-    {
-        return mangoes;
+        cout<<"Number of Mangoes: "<<num<<endl;
+    f.calculate(num);
     }
 };
-
 int main()
 {
-    Fruit basket(8);
-    Apples apples(5);
-    Mangoes mangoes(3);
-
-    cout << "Apples: " << apples.get_apple_count() << endl;
-    cout << "Mangoes: " << mangoes.get_mango_count() << endl;
-    cout << "Total fruits: " << basket.get_fruit_count() << endl;
-
+    Apples a;
+    Mangoes m;
+    Fruit f;
+    m.display();
+    a.display();
+    f.display_fruits();
     return 0;
 }
