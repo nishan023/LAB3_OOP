@@ -7,16 +7,16 @@ public:
     static int sum;
     int calculate(int n1)
     {
-        sum+= n1;
+        sum += n1;
         return sum;
     }
     void display_fruits()
     {
-        cout<<"The total number of fruits in basket: "<<sum<<endl;
+        cout << "The total number of fruits in basket: " << sum << endl;
     }
 };
-int Fruit::sum=0;
-class Apples 
+int Fruit::sum = 0;
+class Apples
 {
 public:
     int num;
@@ -28,11 +28,11 @@ public:
     Fruit f;
     void display()
     {
-        cout<<"Number of Apples: "<<num<<endl;
-    f.calculate(num);
+        cout << "Number of Apples: " << num << endl;
+        f.calculate(num);
     }
 };
-class Mangoes 
+class Mangoes
 {
 public:
     int num;
@@ -44,8 +44,8 @@ public:
     Fruit f;
     void display()
     {
-        cout<<"Number of Mangoes: "<<num<<endl;
-    f.calculate(num);
+        cout << "Number of Mangoes: " << num << endl;
+        f.calculate(num);
     }
 };
 int main()

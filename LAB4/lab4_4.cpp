@@ -43,7 +43,7 @@ public:
         cin >> seatCap;
         cout << "Enter the fuel type (Diesel or Petrol) : ";
         fflush(stdin);
-        cin.getline(fuel_type,10);
+        cin.getline(fuel_type, 10);
     }
     // display function
     void Car_display()
@@ -78,7 +78,7 @@ public:
         cin >> wheel_type;
         fflush(stdin);
         cout << "Enter fuel tank size (In liters): ";
-        cin>>fuel_tank_size;
+        cin >> fuel_tank_size;
     }
     // display function
     void Bike_display()
@@ -133,7 +133,7 @@ public:
     {
 
         cout << "\nModel Type : " << Car_model << endl;
-       Car::Car_display();
+        Car::Car_display();
     }
 };
 
@@ -149,14 +149,14 @@ public:
     {
         cout << "Enter the Make Type (A/B/C/D/E): ";
         cin >> make_type;
-       Bike::Bike_info();
+        Bike::Bike_info();
     }
     // display function
     void Bajaj_display()
     {
 
         cout << "\nMake Type : " << make_type << endl;
-       Bike::Bike_display();
+        Bike::Bike_display();
     }
 };
 // subclass of bike i.e tvs
@@ -178,7 +178,7 @@ public:
     {
 
         cout << "\nMake Type : " << make_type << endl;
-       Bike::Bike_display();
+        Bike::Bike_display();
     }
 };
 
