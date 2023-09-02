@@ -24,13 +24,20 @@ private:
 public:
     void READINFO()
     {
-        cout << "Enter the Admission Number: ";
-        cin >> adno;
-        while (adno < 1000 || adno > 9999)
+        do
         {
-            cout << "Invalid Admission number. Please enter a 4-digit code.";
+            cout << "Enter the Admissiom Number:";
+            cin >> adno;
+        } while (adno < 1000 || adno > 9999);
+        /*
+         cout << "Enter the Admission Number: ";
+         cin >> adno;
+         while (adno < 1000 || adno > 9999)
+        {
+             cout << "Invalid Admission number. Please enter a 4-digit code.";
             cin >> adno;
         }
+        */
         cin.ignore();
         cout << "Enter the Name: ";
         getline(cin, name);

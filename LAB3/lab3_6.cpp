@@ -1,4 +1,5 @@
-// operator overloading both ++ and --
+/*6. Create a class Fraction to represent a fraction of the type 2/5. Overload the 4 arithmetic
+operators and = = to compare two fraction objects.*/
 #include <iostream>
 #include <algorithm>
 using namespace std;
