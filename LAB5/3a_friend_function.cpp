@@ -30,4 +30,3 @@ int main()
     cout << "Mean=" << mean(x);
     return 0;
 }
-// what is friend function?
