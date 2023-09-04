@@ -1,3 +1,5 @@
+//7. Write a program to show the use of “this” pointer.
+
 #include <iostream>
 using namespace std;
 class sample

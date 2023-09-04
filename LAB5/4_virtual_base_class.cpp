@@ -1,3 +1,5 @@
+// 4. Write a program to show the use of virtual base class.
+
 #include <iostream>
 using namespace std;
 class A

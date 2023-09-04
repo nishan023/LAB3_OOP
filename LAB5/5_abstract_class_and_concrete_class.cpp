@@ -1,3 +1,5 @@
+
+//5. Write a program to show the use of abstract class and concrete class.
 #include <iostream>
 using namespace std;
 class Polygon

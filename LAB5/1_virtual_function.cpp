@@ -1,3 +1,4 @@
+//1. Write a program to show the use of virtual function.
 #include <iostream>
 using namespace std;
 class Base
@@ -5,7 +6,7 @@ class Base
 public:
     virtual void print()
     {
-        cout << "Base class" << endl;
+        cout << "Base Function" << endl;
     }
 };
 class Derived : public Base
@@ -13,7 +14,7 @@ class Derived : public Base
 public:
     void print()
     {
-        cout << "Derived class" << endl;
+        cout << "Derived Function" << endl;
     }
 };
 int main()

@@ -1,3 +1,4 @@
+//5. Write a program to catch all the exception
 #include <iostream>
 using namespace std;
 void test(int x)

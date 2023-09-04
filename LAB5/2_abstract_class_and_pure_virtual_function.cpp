@@ -1,3 +1,4 @@
+//2. Write a program to show the use of abstract class and pure virtual function
 #include <iostream>
 using namespace std;
 class A

@@ -1,5 +1,7 @@
 //*A friend class is a class that has access to the private members of another class.
 //* This is done by declaring the other class as a friend of the friend class.
+
+//3. Write a program to show the use of friend function and friend class.
 #include <iostream>
 using namespace std;
 class alpha
