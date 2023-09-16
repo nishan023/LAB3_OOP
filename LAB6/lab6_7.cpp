@@ -1,4 +1,4 @@
-//7. Write a program to catch specified exceptions only
+//7.Write a program to catch specified exceptions only
 #include <iostream>
 using namespace std;
 void test(int x) throw(int, double)
