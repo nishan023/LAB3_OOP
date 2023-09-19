@@ -1,7 +1,7 @@
 
 #include <iostream>
 using namespace std;
-class A  //abstract class
+class A // abstract class
 {
 protected:
     int data;
